@@ -44,33 +44,46 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+.slide-text img
+{
+    position: absolute;
+    top: 25%;
 }
 
 .slide-text{
-    padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(./images/pattern-quotes.svg);
     background-repeat: no-repeat;
     background-size: 80px;
     background-position: center;
+    margin-right: 45%;
 }
 
 
 .p-text{
-    font-weight: 300;
-    font-size: .7rem;
-    line-height: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.2rem;
     color: hsl(240,38%,20%);
+    margin-top: -52%;
+    position: absolute;
+    width: 45%;
+    margin-right: -13%;
 }
 
 .author{
-    margin-top: 20px;
     color: hsl(240,38%,20%);
-    font-size: .5rem;
+    font-size: 1.1rem;
     font-weight: 700;
+    position: absolute;
+    top: 70%;
+    left: 25%;
 }
 
 .author span{
@@ -99,9 +112,9 @@
 
 .buttons{
     position: absolute;
-    left: 50%;
+    left: 60%;
     transform: translateX(-50%);
-    top: 315px;
+    top: 355px;
     width: 90px;
     height: 45px;
     box-shadow:-20px 12px 20px 0px hsla(240, 18%, 77%, 0.52);
@@ -137,3 +150,69 @@
     background-image: url(./images/icon-prev.svg);
 }
 
+
+
+
+
+@media screen and (max-width:900px)
+{
+
+    .slide-img{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        padding: 40px;
+        background-image: url(./images/pattern-bg.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 2%;
+        margin-top: -51%;
+    }
+
+    .buttons{
+        position: absolute;
+        left: 45%;
+        transform: translateX(-50%);
+        top: -60px;
+        width: 90px;
+        height: 45px;
+        box-shadow:-20px 12px 20px 0px hsla(240, 18%, 77%, 0.52);
+        border-radius: 50px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .p-text{
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+        color: hsl(240,38%,20%);
+        margin-top: 35%;
+        position: absolute;
+        width: 45%;
+        margin-right: -51%;
+    }
+
+
+    .author{
+        color: hsl(240,38%,20%);
+        font-size: 1.1rem;
+        font-weight: 700;
+        position: absolute;
+        top: 225px;
+        left: 40%;
+    }
+    
+    .author span{
+        color: hsl(240,18%,77%);
+        font-weight: 500;
+        display: block;
+    }
+
+    .slide-text img
+{
+    position: absolute;
+    left: 45%;
+}
+
+}
